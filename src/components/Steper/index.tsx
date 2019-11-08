@@ -1,4 +1,4 @@
-import {FormControl, FormHelperText, Input, InputLabel} from "@material-ui/core";
+// import {FormControl, FormHelperText, Input, InputLabel} from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -6,6 +6,7 @@ import Stepper from '@material-ui/core/Stepper';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
+import ContactInfo from '../ContactInfo';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -26,14 +27,10 @@ function getSteps() {
     return ['Контактная информация', 'Информация о грузе', 'Отправка'];
 }
 
-function getStepContent(stepIndex: number) {
+function getStepContent(stepIndex: number){
     switch (stepIndex) {
         case 0:
-            return (<FormControl>
-                <InputLabel htmlFor="my-input">Email address</InputLabel>
-                <Input id="my-input" aria-describedby="my-helper-text" />
-                <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
-            </FormControl>);
+            return <ContactInfo />;
         case 1:
             return 'Информация о грузе';
         case 2:
