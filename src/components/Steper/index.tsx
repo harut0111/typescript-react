@@ -1,4 +1,3 @@
-// import {FormControl, FormHelperText, Input, InputLabel} from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
@@ -30,7 +29,7 @@ function getSteps() {
 function getStepContent(stepIndex: number){
     switch (stepIndex) {
         case 0:
-            return <ContactInfo />;
+            return <ContactInfo />
         case 1:
             return 'Информация о грузе';
         case 2:
