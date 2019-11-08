@@ -1,3 +1,7 @@
 .main {
     display: flex;
 }
+
+.stperButtons {
+    text-align: center;
+}

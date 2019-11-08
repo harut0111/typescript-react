@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-.send, .receive {
+.sender, .receiver {
     border: 1px dashed red;
     width: 600px;
     text-align: center;

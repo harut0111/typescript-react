@@ -1,0 +1,25 @@
+.cargoInfo {
+    border: 1px dotted black;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainContent-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContent-info .sender ul {
+    text-align: left;
+}
+
+.mainContent-info .receiver ul {
+    text-align: left;
+}
+
+.mainContent-info ul {
+    list-style-type: none;
+}

@@ -23,7 +23,7 @@ const ContactInfo = () => {
     
     return (
         <div className='contactInfo'>
-            <div className='send'>
+            <div className='sender'>
                 <h1>Отправитель</h1>
                 <FormControl className='formControl'>
                     {/* <InputLabel htmlFor="my-input">Email address</InputLabel>
@@ -59,7 +59,7 @@ const ContactInfo = () => {
                 </div>
             </div>
 
-            <div className='receive'>
+            <div className='receiver'>
                 <h1>Получатель</h1>
                 <FormControl className='formControl'>
                     <TextField

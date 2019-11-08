@@ -5,6 +5,7 @@ import Stepper from '@material-ui/core/Stepper';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
+import CargoInfo from '../CargoInfo';
 import ContactInfo from '../ContactInfo';
 import '../style/steper.css';
 
@@ -33,7 +34,7 @@ function getStepContent(stepIndex: number){
         case 0:
             return <ContactInfo />
         case 1:
-            return 'Информация о грузе';
+            return <CargoInfo />;
         case 2:
             return 'Отправка';
         default:
@@ -76,7 +77,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                             <Button onClick={handleReset}>Reset</Button>
                         </div>
                     ) : (
-                        <div>
+                        <div className='stperButtons'>
                             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
                             <div>
                                 <Button
