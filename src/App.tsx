@@ -4,7 +4,7 @@ import Steper from './components/Steper'
 class App extends React.Component {
   public render() {
     return (
-      <div>
+      <div className='app'>
           <Steper/>
       </div>
     );

@@ -6,6 +6,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
 import ContactInfo from '../ContactInfo';
+import '../style/steper.css';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
 function getSteps() {
     return ['Контактная информация', 'Информация о грузе', 'Отправка'];
 }
+
 
 function getStepContent(stepIndex: number){
     switch (stepIndex) {
@@ -57,37 +59,40 @@ export default function HorizontalLabelPositionBelowStepper() {
     };
 
     return (
-        <div className={classes.root}>
-            <Stepper activeStep={activeStep} alternativeLabel={true}>
-                {steps.map(label => (
-                    <Step key={label}>
-                        <StepLabel>{label}</StepLabel>
-                    </Step>
-                ))}
-            </Stepper>
-            <div>
-                {activeStep === steps.length ? (
-                    <div>
-                        <Typography className={classes.instructions}>All steps completed</Typography>
-                        <Button onClick={handleReset}>Reset</Button>
-                    </div>
-                ) : (
-                    <div>
-                        <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+        <div className='main'>
+
+            <div className={classes.root} >
+                <Stepper activeStep={activeStep} alternativeLabel={true}>
+                    {steps.map(label => (
+                        <Step key={label}>
+                            <StepLabel>{label}</StepLabel>
+                        </Step>
+                    ))}
+                </Stepper>
+                <div>
+                    {activeStep === steps.length ? (
                         <div>
-                            <Button
-                                disabled={activeStep === 0}
-                                onClick={handleBack}
-                                className={classes.backButton}
-                            >
-                                Back
-                            </Button>
-                            <Button variant="contained" color="primary" onClick={handleNext}>
-                                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                            </Button>
+                            <Typography className={classes.instructions}>All steps completed</Typography>
+                            <Button onClick={handleReset}>Reset</Button>
                         </div>
-                    </div>
-                )}
+                    ) : (
+                        <div>
+                            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+                            <div>
+                                <Button
+                                    disabled={activeStep === 0}
+                                    onClick={handleBack}
+                                    className={classes.backButton}
+                                >
+                                    Back
+                                </Button>
+                                <Button variant="contained" color="primary" onClick={handleNext}>
+                                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                </Button>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );
