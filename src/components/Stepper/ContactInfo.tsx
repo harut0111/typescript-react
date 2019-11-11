@@ -23,7 +23,9 @@ const ContactInfo = () => {
     return (
         <div className='contactInfo'>
             <div className='sender'>
-                <h1>Отправитель</h1>
+                <div className='title'>
+                    <h1>Отправитель</h1>
+                </div>
                 <FormControl className='formControl'>
                     {/* <InputLabel htmlFor="my-input">Email address</InputLabel>
                     <Input id="my-input" aria-describedby="my-helper-text" />
@@ -53,13 +55,15 @@ const ContactInfo = () => {
                         />
                 </FormControl>
 
-                <div className='formControl-info'>
+                <div className='title'>
                     <h1>Контактная информация</h1>
                 </div>
             </div>
 
             <div className='receiver'>
-                <h1>Получатель</h1>
+                <div className='title'>
+                    <h1>Получатель</h1>
+                </div>
                 <FormControl className='formControl'>
                     <TextField
                         type='email'
@@ -85,7 +89,7 @@ const ContactInfo = () => {
                         variant="outlined"
                         />
                 </FormControl>
-                <div className='formControl-info'>
+                <div className='title'>
                     <h1>Контактная информация</h1>
                 </div>
             </div>
