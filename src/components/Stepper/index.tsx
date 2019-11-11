@@ -5,9 +5,8 @@ import Stepper from '@material-ui/core/Stepper';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
-import CargoInfo from '../CargoInfo';
-import ContactInfo from '../ContactInfo';
-import '../style/steper.css';
+import CargoInfo from '../Stepper/CargoInfo';
+import ContactInfo from '../Stepper/ContactInfo';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -77,8 +76,8 @@ export default function HorizontalLabelPositionBelowStepper() {
                             <Button onClick={handleReset}>Reset</Button>
                         </div>
                     ) : (
-                        <div className='stperButtons'>
-                            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+                        <div className='stepperButtons'>
+                            {getStepContent(activeStep)}
                             <div>
                                 <Button
                                     disabled={activeStep === 0}

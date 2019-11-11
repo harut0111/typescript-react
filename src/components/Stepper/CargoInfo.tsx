@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './style/cargoInfo.css';
 
 export default function CargoInfo() {
     return (
@@ -13,7 +12,7 @@ export default function CargoInfo() {
                         <div className='title'>
                             <h2>Отправитель</h2>
                         </div>
-                        <ul>
+                        <ul className='list'>
                            <li>Json test 1</li> 
                            <li>Moskca, yl</li> 
                            <li>30.10.2019 10:00 do 16:00</li> 
@@ -25,7 +24,7 @@ export default function CargoInfo() {
                         <div className='title'>
                             <h2>Получатель</h2>
                         </div>
-                        <ul>
+                        <ul className='list'>
                            <li>Json test 1</li> 
                            <li>Moskca, yl</li> 
                            <li>30.10.2019 10:00 do 16:00</li> 

@@ -1,7 +1,6 @@
 import { FormControl, TextField } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import * as React from 'react';
-import './style/contactInfo.css';
 
 
 const useStyles = makeStyles(theme => ({

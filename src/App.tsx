@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Steper from './components/Steper'
+import Steper from './components/Stepper';
 
 class App extends React.Component {
   public render() {
