@@ -10,7 +10,14 @@
 .mainContent-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: left;
-    
+
+}
+
+.addInfo-content {
+    border: 1px dotted black;
+    display: flex;
+    justify-content: space-between;
 }
 

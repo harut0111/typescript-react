@@ -1,4 +1,6 @@
 import * as React from 'react';
+import TextFields from './Currency';
+
 
 export default function CargoInfo() {
     return (
@@ -32,6 +34,9 @@ export default function CargoInfo() {
                            <li>+7 (111)111-11-11</li> 
                         </ul>
                     </div>
+                </div>
+                <div className='mainContent-info'>
+                    <TextFields />
                 </div>
             </div>
            
