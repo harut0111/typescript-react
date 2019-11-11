@@ -1,11 +1,11 @@
-// import Input from '@material-ui/core/Input';
 import InputAdornment from '@material-ui/core/InputAdornment';
+import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles } from '@material-ui/core/styles';
-// import InputLabel from '@material-ui/core/InputLabel';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import TextField from '@material-ui/core/TextField';
 import * as React from 'react';
+
 
 const currencies = [
   {
@@ -50,9 +50,13 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(1),
     width: 200,
   },
+  textareaLabel: {
+    fontSize: 12,
+    paddingTop: 10
+  },
   project: {
     width: 520
-  }
+  },
 
 }));
 
@@ -123,6 +127,7 @@ export default function MultilineTextFields() {
           margin="normal"
           variant="outlined"
         />
+        <InputLabel className={classes.textareaLabel}>ваш комментарий к заявке</InputLabel>
         <TextareaAutosize 
             aria-label="minimum height" 
             rows={5} 

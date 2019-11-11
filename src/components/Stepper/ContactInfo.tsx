@@ -27,8 +27,6 @@ const useStyles = makeStyles(theme => ({
 const ContactInfo = () => {
 
     const classes = useStyles();
-
-    console.log("Hello")
     
     return (
         <div className='contactInfo'>

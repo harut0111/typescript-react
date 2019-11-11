@@ -1,5 +1,7 @@
 import * as React from 'react';
-import TextFields from './Currency';
+import CheckboxMUI from './CheckboxMUI';
+import TableMUI from './TableMUI';
+import TextFieldsMUI from './TextFieldsMUI';
 
 
 export default function CargoInfo() {
@@ -36,7 +38,16 @@ export default function CargoInfo() {
                     </div>
                 </div>
                 <div className='mainContent-info'>
-                    <TextFields />
+                    <TextFieldsMUI />
+                </div>
+                <div className='mainContent-table'>
+                    <TableMUI />
+                </div>
+                <div className='totalCargoSpace'>
+                    <p>всего грузовый место 5</p>
+                </div>
+                <div style={{textAlign: 'center'}}>
+                    <CheckboxMUI />
                 </div>
             </div>
            
