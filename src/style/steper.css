@@ -1,8 +1,10 @@
 .main {
   display: flex; }
 
-.main-compoleted {
-  margin: 0 auto; }
+.main-completed {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center; }
 
 .makeStyles-root-4 {
   width: 100% !important; }

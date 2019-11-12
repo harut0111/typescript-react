@@ -76,7 +76,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                 </Stepper>
                 <div>
                     {activeStep === steps.length ? (
-                        <div className='main-compoleted'>
+                        <div className='main-completed'>
                             <Typography className={classes.instructions}>All steps completed</Typography>
                             <Button onClick={handleReset}>Reset</Button>
                         </div>
