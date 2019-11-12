@@ -41,7 +41,7 @@ function getStepContent(stepIndex: number){
         case 1:
             return <CargoInfo />;
         case 2:
-            return 'Отправка';
+            return <div className='header'>Отправка</div>;
         default:
             return 'Unknown stepIndex';
     }
@@ -77,7 +77,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                 </Stepper>
                 <div>
                     {activeStep === steps.length ? (
-                        <div>
+                        <div className='main-compoleted'>
                             <Typography className={classes.instructions}>All steps completed</Typography>
                             <Button onClick={handleReset}>Reset</Button>
                         </div>

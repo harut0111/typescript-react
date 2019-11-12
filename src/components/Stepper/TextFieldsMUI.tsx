@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 10
   },
   project: {
-    right: '0',
+    marginLeft: 415,
     width: 600,
   },
 
