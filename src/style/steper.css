@@ -1,0 +1,22 @@
+.main {
+  display: flex; }
+
+.main-compoleted {
+  margin: 0 auto; }
+
+.makeStyles-root-4 {
+  width: 100% !important; }
+
+.list {
+  list-style-type: none; }
+
+.title, .header {
+  text-align: center; }
+
+.stepperButtons {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center; }
+
+.MuiStepIcon-active, .MuiStepIcon-completed {
+  color: #4f0103 !important; }

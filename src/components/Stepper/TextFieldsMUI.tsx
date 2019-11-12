@@ -48,14 +48,14 @@ const useStyles = makeStyles(theme => ({
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    width: 200,
+    width: 290,
   },
   textareaLabel: {
     fontSize: 12,
     paddingTop: 10
   },
   project: {
-    marginLeft: 415,
+    float: 'right',
     width: 600,
   },
 

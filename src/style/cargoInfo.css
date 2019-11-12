@@ -1,0 +1,25 @@
+.cargoInfo {
+  border: 1px dotted black;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+
+.mainContent-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; }
+
+.addInfo-content {
+  border: 1px dotted black;
+  display: flex;
+  justify-content: space-between; }
+
+.makeStyles-container-224 {
+  width: 100% !important; }
+
+.firstLine {
+  position: relative;
+  width: 100%; }

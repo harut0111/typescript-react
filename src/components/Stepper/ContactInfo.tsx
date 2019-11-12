@@ -11,6 +11,9 @@ const useStyles = makeStyles(theme => ({
       flexWrap: 'wrap',
     },
     fab: {
+        "&:hover": {
+            backgroundColor: "#4f0103"
+        },
         backgroundColor: '#4f0103',
         margin: theme.spacing(1),
         textAlign: 'right',
@@ -62,6 +65,15 @@ const ContactInfo = () => {
                 <div className='addInfo'>
                     <div className='title'>
                         <h2>Контактная информация</h2>
+                    </div>
+                    <div className='addInfo-content'>
+                        <div style={{margin: 'auto'}}>FIO</div>
+                        <div style={{margin: 'auto'}}>Телефон</div>
+                        <div className='addBtn'>
+                            <Fab color="primary" aria-label="add" className={classes.fab}>
+                                <AddIcon />
+                            </Fab>
+                        </div>
                     </div>
                 </div>
             </div>

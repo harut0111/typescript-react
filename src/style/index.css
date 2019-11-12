@@ -1,0 +1,66 @@
+.cargoInfo {
+  border: 1px dotted black;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto; }
+
+.mainContent-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left; }
+
+.addInfo-content {
+  border: 1px dotted black;
+  display: flex;
+  justify-content: space-between; }
+
+.makeStyles-container-224 {
+  width: 100% !important; }
+
+.firstLine {
+  position: relative;
+  width: 100%; }
+
+.contactInfo {
+  border: 1px dotted black;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto; }
+
+.addInfo {
+  border: 1px dotted red; }
+
+.sender, .receiver {
+  border: 1px dashed red;
+  width: 600px; }
+
+.formControl {
+  width: 90%; }
+
+.main {
+  display: flex; }
+
+.main-compoleted {
+  margin: 0 auto; }
+
+.makeStyles-root-4 {
+  width: 100% !important; }
+
+.list {
+  list-style-type: none; }
+
+.title, .header {
+  text-align: center; }
+
+.stepperButtons {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center; }
+
+.MuiStepIcon-active, .MuiStepIcon-completed {
+  color: #4f0103 !important; }

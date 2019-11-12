@@ -1,0 +1,17 @@
+.contactInfo {
+  border: 1px dotted black;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto; }
+
+.addInfo {
+  border: 1px dotted red; }
+
+.sender, .receiver {
+  border: 1px dashed red;
+  width: 600px; }
+
+.formControl {
+  width: 90%; }
