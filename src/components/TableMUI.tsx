@@ -23,10 +23,10 @@ function createData(name:string, calories:number, fat:number, carbs:number, prot
 
 const rows = [
   createData('SafePack 32', 159, 6.0, 24, 4.0),
-  createData('SafePack 32', 237, 9.0, 37, 4.3),
+  createData('SafePack 30', 237, 9.0, 37, 4.3),
   createData('Korobka', 262, 16.0, 24, 6.0),
-  createData('SafePack 32', 305, 3.7, 67, 4.3),
-  createData('SafePack 32', 356, 16.0, 49, 3.9),
+  createData('SafePack 33', 305, 3.7, 67, 4.3),
+  createData('SafePack 31', 356, 16.0, 49, 3.9),
 ];
 
 export default function SimpleTable() {
