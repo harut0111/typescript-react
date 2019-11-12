@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.makeStyles-root-4 {
+    width: 100% !important;
+}
+
 .list {
     list-style-type: none;
 }
@@ -11,8 +15,11 @@
 }
 
 .stepperButtons {
-    width: 80%;
     margin: 50px auto;
     display: flex;
     justify-content: center;
+}
+
+.MuiStepIcon-active, .MuiStepIcon-completed {
+    color: #4f0103 !important;
 }

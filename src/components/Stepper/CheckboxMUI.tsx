@@ -18,6 +18,7 @@ export default function CheckboxLabels() {
           checked={state.checkedA}
           onChange={handleChange("checkedA")}
           value="checkedA"
+          style={{color: '#4f0103'}}
         />
       }
       label="данные верны"

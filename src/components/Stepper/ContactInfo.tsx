@@ -88,8 +88,6 @@ const ContactInfo = () => {
                         error={false}
                         id="outlined-error-helper-text"
                         label="Наименование отправитель"
-                        // defaultValue="Hello World"
-                        // helperText="Incorrect entry."
                         className={classes.textField}
                         margin="normal"
                         variant="outlined"
@@ -107,9 +105,6 @@ const ContactInfo = () => {
                                 <AddIcon />
                             </Fab>
                         </div>
-                    </div>
-                    <div className='addInfo-inputs'>
-                        asdf
                     </div>
                 </div>
             </div>

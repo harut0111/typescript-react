@@ -55,7 +55,8 @@ const useStyles = makeStyles(theme => ({
     paddingTop: 10
   },
   project: {
-    width: 520
+    right: '0',
+    width: 600,
   },
 
 }));
@@ -81,7 +82,7 @@ export default function MultilineTextFields() {
 
   return (
     <form className={classes.container} noValidate={true} autoComplete="off">
-      <div className='firstLIne'>
+      <div className='firstLine'>
         <TextField
           id="standard-select-currency"
           required={true}
@@ -134,8 +135,7 @@ export default function MultilineTextFields() {
             aria-label="minimum height" 
             rows={5} 
             className={classes.textarea}
-            placeholder="Minimum 3 rows" 
-
+            // placeholder="Minimum 3 rows" 
         />
       </div>
     </form>

@@ -17,6 +17,12 @@ const useStyles = makeStyles((theme: Theme) =>
             marginBottom: theme.spacing(1),
             marginTop: theme.spacing(1),
         },
+        nextButton: {
+            "&:hover": {
+                 backgroundColor: '#4f0103'
+            },
+            backgroundColor: '#4f0103',
+        },
         root: {
             width: '90%',
         }
@@ -86,7 +92,7 @@ export default function HorizontalLabelPositionBelowStepper() {
                                 >
                                     Back
                                 </Button>
-                                <Button variant="contained" color="primary" onClick={handleNext}>
+                                <Button variant="contained" color="primary" onClick={handleNext} className={classes.nextButton}>
                                     {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                                 </Button>
                             </div>
