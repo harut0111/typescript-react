@@ -76,9 +76,9 @@ export default function HorizontalLabelPositionBelowStepper() {
                             <Button onClick={handleReset}>Reset</Button>
                         </div>
                     ) : (
-                        <div className='stepperButtons'>
+                        <div className='mainContent'>
                             {getStepContent(activeStep)}
-                            <div>
+                            <div className='stepperButtons'>
                                 <Button
                                     disabled={activeStep === 0}
                                     onClick={handleBack}

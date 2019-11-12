@@ -9,6 +9,10 @@ import * as React from 'react';
 
 const currencies = [
   {
+    label: '₽',
+    value: 'RUB',
+  },
+  {
     label: '$',
     value: 'USD',
   },
@@ -23,10 +27,6 @@ const currencies = [
   {
     label: '¥',
     value: 'JPY',
-  },
-  {
-    label: '₽',
-    value: 'RUB',
   },
 ];
 
@@ -62,7 +62,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function MultilineTextFields() {
   const classes = useStyles();
-  const [currency, setCurrency] = React.useState('EUR');
+  const [currency, setCurrency] = React.useState('RUB');
 
   const [values, setValues] = React.useState({
       orderNumber: 0,
@@ -70,7 +70,9 @@ export default function MultilineTextFields() {
   })
 
   const handleCurrencyChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setCurrency(currencies[event.currentTarget.value].value);
+    console.log('event', event);
+    console.log('event.currentTarget.value', event.target.value);
+    setCurrency(event.target.value);
   };
 
   const handleChange = (prop:string) => (event: React.ChangeEvent<HTMLInputElement>) => {
