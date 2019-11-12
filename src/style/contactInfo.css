@@ -10,7 +10,6 @@
   border: 1px dotted red; }
 
 .sender, .receiver {
-  border: 1px dashed red;
   width: 600px; }
 
 .formControl {

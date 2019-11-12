@@ -13,7 +13,6 @@
   text-align: left; }
 
 .addInfo-content {
-  border: 1px dotted black;
   display: flex;
   justify-content: space-between; }
 
@@ -36,7 +35,6 @@
   border: 1px dotted red; }
 
 .sender, .receiver {
-  border: 1px dashed red;
   width: 600px; }
 
 .formControl {
@@ -57,7 +55,8 @@
   list-style-type: none; }
 
 .title, .header {
-  text-align: center; }
+  text-align: center;
+  color: #4d4d4d; }
 
 .stepperButtons {
   margin: 50px auto;

@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
   },
   project: {
     float: 'right',
-    width: 600,
+    width: '41.5%',
   },
 
 }));
