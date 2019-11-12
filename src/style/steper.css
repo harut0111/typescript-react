@@ -10,7 +10,11 @@
   width: 100% !important; }
 
 .list {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
+
+.list li {
+  padding: 3px; }
 
 .title, .header {
   text-align: center;

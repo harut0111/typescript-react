@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
     flexWrap: 'wrap',
+    width: '100%',
   },
   textarea: {
     display: "block",
@@ -48,7 +49,7 @@ const useStyles = makeStyles(theme => ({
   textField: {
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
-    width: 290,
+    width: '20%',
   },
   textareaLabel: {
     fontSize: 12,
@@ -56,7 +57,7 @@ const useStyles = makeStyles(theme => ({
   },
   project: {
     float: 'right',
-    width: '41.5%',
+    width: '45%',
   },
 
 }));
@@ -71,8 +72,6 @@ export default function MultilineTextFields() {
   })
 
   const handleCurrencyChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('event', event);
-    console.log('event.currentTarget.value', event.target.value);
     setCurrency(event.target.value);
   };
 
@@ -135,7 +134,6 @@ export default function MultilineTextFields() {
             aria-label="minimum height" 
             rows={5} 
             className={classes.textarea}
-            // placeholder="Minimum 3 rows" 
         />
       </div>
     </form>

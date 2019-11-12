@@ -3,7 +3,7 @@
   display: flex;
   padding: 10px;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
   margin: 0 auto; }
 
 .mainContent-info {
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between; }
 
-.makeStyles-container-224 {
+.makeStyles-container-224, .makeStyles-container-400 {
   width: 100% !important; }
 
 .firstLine {
@@ -24,7 +24,7 @@
   width: 100%; }
 
 .contactInfo {
-  border: 1px dotted black;
+  border-bottom: 1px solid black;
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -32,13 +32,21 @@
   margin: 0 auto; }
 
 .addInfo {
-  border: 1px dotted red; }
+  border-bottom: 1px solid rgba(128, 128, 128, 0.575); }
+
+.addInfo-content {
+  justify-content: space-between;
+  align-items: center; }
+
+.addInfo div {
+  margin-left: 30px; }
 
 .sender, .receiver {
-  width: 600px; }
+  width: 600px;
+  margin: 10px; }
 
 .formControl {
-  width: 90%; }
+  width: 100%; }
 
 .main {
   display: flex; }
@@ -52,7 +60,11 @@
   width: 100% !important; }
 
 .list {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
+
+.list li {
+  padding: 3px; }
 
 .title, .header {
   text-align: center;

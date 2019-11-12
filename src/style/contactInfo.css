@@ -1,5 +1,5 @@
 .contactInfo {
-  border: 1px dotted black;
+  border-bottom: 1px solid black;
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -7,10 +7,18 @@
   margin: 0 auto; }
 
 .addInfo {
-  border: 1px dotted red; }
+  border-bottom: 1px solid rgba(128, 128, 128, 0.575); }
+
+.addInfo-content {
+  justify-content: space-between;
+  align-items: center; }
+
+.addInfo div {
+  margin-left: 30px; }
 
 .sender, .receiver {
-  width: 600px; }
+  width: 600px;
+  margin: 10px; }
 
 .formControl {
-  width: 90%; }
+  width: 100%; }

@@ -5,8 +5,7 @@ import Stepper from '@material-ui/core/Stepper';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import * as React from 'react';
-import CargoInfo from '../Stepper/CargoInfo';
-import ContactInfo from '../Stepper/ContactInfo';
+import {IStepProps} from './types'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -29,35 +28,16 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-function getSteps() {
-    return ['Контактная информация', 'Информация о грузе', 'Отправка'];
-}
-
-
-function getStepContent(stepIndex: number){
-    switch (stepIndex) {
-        case 0:
-            return <ContactInfo />
-        case 1:
-            return <CargoInfo />;
-        case 2:
-            return <div className='header'>Отправка</div>;
-        default:
-            return 'Unknown stepIndex';
-    }
-}
-
-export default function HorizontalLabelPositionBelowStepper() {
+export default function CustomStepper({steps}: IStepProps) {
     const classes = useStyles();
     const [activeStep, setActiveStep] = React.useState(0);
-    const steps = getSteps();
 
     const handleNext = () => {
-        setActiveStep(prevActiveStep => prevActiveStep + 1);
+        setActiveStep(prevActiveStep => ++ prevActiveStep);
     };
 
     const handleBack = () => {
-        setActiveStep(prevActiveStep => prevActiveStep - 1);
+        setActiveStep(prevActiveStep => -- prevActiveStep);
     };
 
     const handleReset = () => {
@@ -68,9 +48,9 @@ export default function HorizontalLabelPositionBelowStepper() {
         <div className='main'>
             <div className={classes.root} >
                 <Stepper activeStep={activeStep} alternativeLabel={true}>
-                    {steps.map(label => (
-                        <Step key={label}>
-                            <StepLabel>{label}</StepLabel>
+                    {steps.map(step => (
+                        <Step key={step.title}>
+                            <StepLabel>{step.title}</StepLabel>
                         </Step>
                     ))}
                 </Stepper>
@@ -82,10 +62,10 @@ export default function HorizontalLabelPositionBelowStepper() {
                         </div>
                     ) : (
                         <div className='mainContent'>
-                            {getStepContent(activeStep)}
+                            {steps[activeStep].component}
                             <div className='stepperButtons'>
                                 <Button
-                                    disabled={activeStep === 0}
+                                    disabled={!activeStep}
                                     onClick={handleBack}
                                     className={classes.backButton}
                                 >

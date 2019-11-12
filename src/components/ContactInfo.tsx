@@ -19,13 +19,12 @@ const useStyles = makeStyles(theme => ({
         textAlign: 'right',
       },
     textField: {
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
+    //   marginLeft: theme.spacing(1),
+    //   marginRight: theme.spacing(1),
       width: '100%',
     },
     
   }));
-
 
 const ContactInfo = () => {
 
@@ -65,8 +64,8 @@ const ContactInfo = () => {
                         <h2>Контактная информация</h2>
                     </div>
                     <div className='addInfo-content'>
-                        <div style={{margin: 'auto'}}>FIO</div>
-                        <div style={{margin: 'auto'}}>Телефон</div>
+                        <div>ФИО</div>
+                        <div>Телефон</div>
                         <div className='addBtn'>
                             <Fab color="primary" aria-label="add" className={classes.fab}>
                                 <AddIcon />
@@ -87,7 +86,6 @@ const ContactInfo = () => {
                         id="outlined-error-helper-text"
                         label="Адрес отправитель"
                         placeholder="Начните вводить адрес отправительныя"
-                        // helperText="Incorrect entry."
                         className={classes.textField}
                         margin="normal"
                         variant="outlined"
@@ -108,8 +106,8 @@ const ContactInfo = () => {
                         <h2>Контактная информация</h2>
                     </div>
                     <div className='addInfo-content'>
-                        <div style={{margin: 'auto'}}>FIO</div>
-                        <div style={{margin: 'auto'}}>Телефон</div>
+                        <div>ФИО</div>
+                        <div>Телефон</div>
                         <div className='addBtn'>
                             <Fab color="primary" aria-label="add" className={classes.fab}>
                                 <AddIcon />

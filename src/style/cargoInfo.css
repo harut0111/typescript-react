@@ -3,7 +3,7 @@
   display: flex;
   padding: 10px;
   flex-direction: column;
-  width: 80%;
+  width: 75%;
   margin: 0 auto; }
 
 .mainContent-info {
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between; }
 
-.makeStyles-container-224 {
+.makeStyles-container-224, .makeStyles-container-400 {
   width: 100% !important; }
 
 .firstLine {
