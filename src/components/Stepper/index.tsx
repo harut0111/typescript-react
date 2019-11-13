@@ -21,7 +21,11 @@ const useStyles = makeStyles((theme: Theme) =>
             marginRight: theme.spacing(1),
         },
         root: {
+            margin: '0 auto',
             width: '90%',
+        },
+        stepper: {
+            margin: '30px 30px 30px 55px',
         }
     }),
 );
@@ -45,7 +49,7 @@ export default function CustomStepper({steps}: IStepProps) {
     return (
         <div className='main'>
             <div className={classes.root} >
-                <Stepper activeStep={activeStep} alternativeLabel={true}>
+                <Stepper activeStep={activeStep} alternativeLabel={true} className={classes.stepper}>
                     {steps.map(step => (
                         <Step key={step.title}>
                             <StepLabel>{step.title}</StepLabel>
