@@ -7,9 +7,9 @@ import './style/index.css'
 class App extends React.Component {
   public render() {
     const steps = [
-      {title: 'Контактная информация', component: <ContactInfo/> },
-      {title: 'Информация о грузе', component: <CargoInfo/> },
-      {title: 'Отправка', component: () => <div className='header'>Отправка</div>}
+      {title: 'Контактная информация', component: <ContactInfo/>, btnValus: {left: 'ОТМЕНА',right: 'ВПЕРЕД' }},
+      {title: 'Информация о грузе', component: <CargoInfo/> , btnValus: {left: 'НАЗАД',right: 'ОФОРМИТЬ ЗАКАЗ' }},
+      {title: 'Отправка', component: <div className='header'>Отправка</div>, btnValus: {left: 'НАЗАД',right: 'ОТПРАВИТЬ' }}
     ]
     return (
       <div className='app'>

@@ -9,9 +9,6 @@ import {IStepProps} from './types'
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
-        backButton: {
-            marginRight: theme.spacing(1),
-        },
         instructions: {
             marginBottom: theme.spacing(1),
             marginTop: theme.spacing(1),
@@ -21,6 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
                  backgroundColor: '#4f0103'
             },
             backgroundColor: '#4f0103',
+            marginRight: theme.spacing(1),
         },
         root: {
             width: '90%',
@@ -64,15 +62,24 @@ export default function CustomStepper({steps}: IStepProps) {
                         <div className='mainContent'>
                             {steps[activeStep].component}
                             <div className='stepperButtons'>
+   
                                 <Button
-                                    disabled={!activeStep}
                                     onClick={handleBack}
-                                    className={classes.backButton}
+                                    className={classes.nextButton}
+                                    variant="contained" 
+                                    color="primary"
                                 >
-                                    Back
+                                    {steps[activeStep].btnValus.left}
                                 </Button>
-                                <Button variant="contained" color="primary" onClick={handleNext} className={classes.nextButton}>
-                                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                                
+                                <Button 
+                                    variant="contained" 
+                                    color="primary" 
+                                    onClick={handleNext} 
+                                    className={classes.nextButton}
+                                    disabled={false}
+                                >
+                                    {steps[activeStep].btnValus.right}
                                 </Button>
                             </div>
                         </div>
